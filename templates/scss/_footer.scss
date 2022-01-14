@@ -60,7 +60,7 @@
 
 .social {
     display: block;
-    width: 98%;
+    width: 95%;
     height: 25%;
     background-color: #e0e0e0;
     display: flex;
@@ -73,6 +73,10 @@
     margin: 0 10px;
 }
 
+
+.social a:hover {
+    color: pink;
+}
 
 @media screen and (max-width: 1000px) {
     .footer {

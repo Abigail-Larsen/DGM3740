@@ -169,9 +169,7 @@ form.search button:hover {
   .smallHeader {
     display: flex;
     width: 100%;
-    background-color: #e9e9e9;
-    padding: 10px;
-    margin-left: 10px; }
+    background-color: #e9e9e9; }
 
   .smallHeader i {
     cursor: pointer; }
@@ -400,7 +398,7 @@ element {
 
 .social {
   display: block;
-  width: 98%;
+  width: 95%;
   height: 25%;
   background-color: #e0e0e0;
   display: flex;
@@ -410,6 +408,9 @@ element {
 
 .social a {
   margin: 0 10px; }
+
+.social a:hover {
+  color: pink; }
 
 @media screen and (max-width: 1000px) {
   .footer {
