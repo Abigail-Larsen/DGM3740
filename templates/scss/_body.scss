@@ -1,0 +1,145 @@
+.body-wrapper {
+    height: 100%;
+}
+
+.body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+.slider-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    width:1200px;
+    height: 350px;
+    background-size: cover;
+    background-color: #616161;
+    margin: 5px;
+}
+
+.blogs {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs p {
+    padding: 0 0 0 20px;
+} 
+
+.blog-wrapper {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog {
+    width: 20%;
+    height: 250px;
+    background-color: #616161;
+    margin: 10px;
+    background-size: cover;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 50px #ccc;
+}
+
+.blog:nth-child(1) {
+    background-image: url('../assets/slider4.jpeg');
+}
+.blog:nth-child(2) {
+    background-image: url('../assets/slider3.jpeg');
+}
+.blog:nth-child(3) {
+    background-image: url('../assets/slider2.jpeg');
+}
+.blog:nth-child(4) {
+    background-image: url('../assets/slider1.jpeg');
+}
+
+@mixin background-opacity($color: #333, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+element {
+     @include background-opacity(#333, 0.5);
+}
+
+.blog .blog-title {
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+    color: white;
+    @include background-opacity;
+    height: 20%;
+    text: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog .blog-date {
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+    color: white;
+    height: 15%;
+    @include background-opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .body { 
+        display: flex;
+        align-items: center;
+    }
+    .slider {
+        background-color: #616161;
+        margin: 5px;
+        width: 350px;
+    }
+    .blog-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin-top: 30px;
+    }
+    .blog {
+        list-style: none;
+        flex: 0 0 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .blogs {
+        display: flex;
+        flex-direction: column;
+    }
+    .blogs p {
+        padding: 0 0 0 20px;
+    }
+    .blog-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .blog {
+        list-style: none;
+        flex: 0 0 200px;
+        height: 200px;
+        width: 100%;
+    }
+}
