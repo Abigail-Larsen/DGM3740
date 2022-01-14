@@ -118,42 +118,41 @@
             <!-- Schema Data -->
             <div class='contact-info'>
                 <div class="contacting">
-                    <div>
+                    <div itemscope itemtype="https://schema.org/Organization">
                         <h3>Contact Us</h3>
                         <a href="https://www.google.com/maps/dir//cruise+shop+lehi/@40.4425572,-111.8983703,14z/data=!3m1!5s0x8752801894f2dc93:0x20c04782184fee4e!4m8!4m7!1m0!1m5!1m1!1s0x875280187c6afb0f:0x6b520938fef23ec3!2m2!1d-111.8792432!2d40.4322472">
-                            <p>CABOT CRUIZES1825 W Traverse Pkwy, Lehi, UT 84043</p>
+                            <p itemprop="location">CABOT CRUIZES1825 W Traverse Pkwy, Lehi, UT 84043</p>
                         </a>
                     </div>
 
-
                     <div>
                         <h3>Phone: </h3>
-                        <p class='phone'><a href="tel:123-456-7890">123-456-7890</a></p>
+                        <p class='phone' itemprop="telephone"><a href="tel:123-456-7890">123-456-7890</a></p>
                     </div>
 
 
-                    <div>
+                    <div itemscope itemtype="https://schema.org/LocalBusiness">
                         <h3>Hours of OperaMon: </h3>
-                        <p>Monday – Friday 9am – 4pm</p>
+                        <p itemprop='openingHours'>Monday – Friday 9am – 4pm</p>
                     </div>
 
                 </div>
-                <div class="news-letter">
+                <div class="news-letter" itemscope itemtype="https://schema.org/Organization">
                     <h3>News Letter</h3>
                     <p>Subscribe to our email list and stay up-to-date with our
                         ho6est offers and latest specials.
                     </p>
                     
                     <input type="search" placeholder="Email..">
-                    <button>Subscribe</button>
+                    <button itemprop="actionableFeedbackPolicy">Subscribe</button>
                 </div>
-                <div class="info">
+                <div class="info" itemscope itemtype="https://schema.org/Organization">
                     <h3>Why cabot cruises</h3>
-                    <p>Cabot Cruises is a travel agency providing the best cruise
+                    <p itemprop="review">Cabot Cruises is a travel agency providing the best cruise
                         deals on our online travel website. We can help you with all
                         inclusive vacaMons including discounted cruises.
                     </p>
-                    <p>
+                    <p itemprop="review">
                         We do not sell travel to residents of Delaware, Iowa,
                         Florida, Hawaii and Washington state because those states
                         are just wierd. If you are a resident of one of these states,
@@ -193,7 +192,6 @@
                 $('.slider').slick({
                     dots: true,
                     infinite: true,
-                    speed: 9000,
                     slidesToShow: 1,
                     autoplay: true,
                 });
