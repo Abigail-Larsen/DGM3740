@@ -1,0 +1,128 @@
+.footer{
+    background-color: white;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer p {
+    padding: 10px
+}
+
+.contact-info {
+    width: 100%;
+    height: 75%;
+    background-color: #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
+.contact-info div h3 {
+    weight: 700;
+}
+
+.contacting {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.news-letter{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.news-letter input {
+    margin: 5px;
+    width: 80%;
+}
+.news-letter button {
+    margin: 5px;
+    width: 80%;
+}
+
+.info {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.social {
+    display: block;
+    width: 95%;
+    height: 25%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+.social a {
+    margin: 0 10px;
+}
+
+
+.social a:hover {
+    color: pink;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        width: 100%;
+    }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .contact-info .contacting {
+        list-style: none;
+        flex: 0 0 33%;
+    }
+    .contact-info .news-letter {
+        list-style: none;
+        flex: 0 0 33%;
+    }
+    .contact-info .info {
+        list-style: none;
+        flex: 0 0 33%;
+    }
+
+    .social {
+        padding: 10px;
+
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }    
+    .contact-info .contacting {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .contact-info .news-letter {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .contact-info .info {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
