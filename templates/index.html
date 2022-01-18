@@ -19,12 +19,27 @@
 <body>
     <div class='body-wrapper'>
         <div class="header">
-            <div class='smallHeader'>
-                <i class="fas fa-bars"></i>
+            <nav class='smallHeader'>
+                <i class="fas fa-bars" id='theButton'></i>
                 <form class="search" >
                     <input type="text" placeholder="Search.." name="search">
                 </form>
-            </div>
+                <div class='menu'>
+                    <a class="active" href="#">Home</a>
+                    <a href="#">Cruises</a>
+                    <div class="subnav">
+                        <button class="subnavbtn">Agents <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                          <a href="#">Bring</a>
+                          <a href="#">Deliver</a>
+                          <a href="#">Package</a>
+                          <a href="#">Express</a>
+                        </div>
+                    </div> 
+
+                    <a href="#">Book</a>
+                </div>
+            </nav>
             <div class="top-header">
                 <figure>
                     <img 
@@ -188,7 +203,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
-
+    <script src="js/index.js"></script>   
     <script type="text/javascript">
         function initSlider(){
                 $('.slider').slick({
