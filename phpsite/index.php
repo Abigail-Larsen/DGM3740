@@ -1,7 +1,7 @@
 
 <?php 
+$title="Home";
 include '_top.php';     
-$title="home"
 ?>
 
 <div class="body">
