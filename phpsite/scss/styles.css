@@ -78,8 +78,7 @@ a, a:visited, a:hover, a:active {
   align-items: center;
   height: 50%;
   width: 100%;
-  overflow: hidden;
-  background-color: #e9e9e9; }
+  overflow: hidden; }
 
 .nav-grouping {
   width: 80%;
@@ -99,7 +98,7 @@ a, a:visited, a:hover, a:active {
   color: black; }
 
 .nav a.active {
-  background-color: #2196F3;
+  background-color: #12558b;
   color: white; }
 
 .subnav {
@@ -151,7 +150,7 @@ form.search button {
   float: right;
   width: 5%;
   padding: 5px;
-  background: #2196F3;
+  background: #12558b;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -168,8 +167,7 @@ form.search button:hover {
 
   .smallHeader {
     display: flex;
-    width: 80%;
-    background-color: #e9e9e9; }
+    width: 80%; }
     .smallHeader .menu {
       display: none; }
     .smallHeader i {
@@ -181,7 +179,6 @@ form.search button:hover {
     width: 80%; }
 
   .nav {
-    background-color: #eeeeee;
     width: 80%; }
 
   .nav-grouping {
@@ -281,13 +278,13 @@ form.search button:hover {
 
 .slider-wrapper {
   width: 100%;
+  padding-top: 20px;
   display: flex;
   justify-content: center; }
 
 .slider {
   width: 100%;
-  height: 350px;
-  background-size: cover;
+  height: auto;
   background-color: #616161;
   margin: 5px; }
 
@@ -400,13 +397,13 @@ element {
     height: 200px;
     width: 100%; } }
 .footer {
-  background-color: white;
+  color: white;
   height: 25%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #bdbdbd; }
+  background-color: #494848; }
 
 .footer p {
   padding: 10px; }
@@ -454,16 +451,19 @@ element {
   background-color: #e0e0e0;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .social-wrapper {
   width: 20%;
   height: 100%;
   display: flex;
   justify-content: space-between; }
-
-.social a:hover {
-  color: pink; }
+  .social-wrapper a i {
+    color: #494848; }
+  .social-wrapper a i:hover {
+    color: white; }
 
 @media screen and (max-width: 1000px) {
   .footer {

@@ -1,34 +1,34 @@
 
 <?php 
-$title="Home";
-include '_top.php';     
+    $title="Home";
+    include '_top.php';     
 ?>
 
 <div class="body">
     <div class='slider-wrapper'>
         <div class='slider'>
             <picture>
-                <source media="(min-width:1000px)" srcset="./assets/SlickCruise-1200.jpeg">
-                <source media="(min-width:40px)" srcset="./assets/SlickCruise-350.png">
-                <img style="width:auto; height: 350px">
-            </picture>
-
-            <picture>
-                <source media="(min-width:1000px)" srcset="./assets/SlickCruise2-1200.jpeg">
-                <source media="(min-width:40px)" srcset="./assets/SlickCruise2-350.png">
-                <img style="width:auto; height: 350px">
-            </picture>
-
-            <picture>
                 <source media="(min-width:1000px)" srcset="./assets/SlickCruise3-1200.jpeg">
                 <source media="(min-width:40px)" srcset="./assets/SlickCruise3-350.png">
-                <img style="width:auto; height: 350px">
+                <img style="width:100%; height: auto" alt="Slider Img">
             </picture>
 
             <picture>
                 <source media="(min-width:1000px)" srcset="./assets/SlickCruise4-1200.jpeg">
                 <source media="(min-width:40px)" srcset="./assets/SlickCruise4-350.png">
-                <img style="width:auto; height: 350px">
+                <img style="width:100%; height: auto" alt="Slider Img">
+            </picture>
+
+            <picture>
+                <source media="(min-width:1000px)" srcset="./assets/SlickCruise3-1200.jpeg">
+                <source media="(min-width:40px)" srcset="./assets/SlickCruise3-350.png">
+                <img style="width:100%; height: auto" alt="Slider Img">
+            </picture>
+
+            <picture>
+                <source media="(min-width:1000px)" srcset="./assets/SlickCruise4-1200.jpeg">
+                <source media="(min-width:40px)" srcset="./assets/SlickCruise4-350.png">
+                <img style="width:100%; height: auto" alt="Slider Img">
             </picture>
         </div>
     </div>
@@ -53,7 +53,7 @@ include '_top.php';
                 <div class="blog-date">May 4, 2018</div>
             </a>
         </div>
-    </div>
+    </div>  
 </div>
     
 <?php include '_bot.php'; ?>
