@@ -1,11 +1,11 @@
 .footer{
-    background-color: white;
+    color: white;
     height: 25%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #bdbdbd;
+    background-color: #494848;
 }
 .footer p {
     padding: 10px
@@ -60,6 +60,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -68,10 +70,12 @@
     height: 100%;    
     display: flex;
     justify-content: space-between;
-}
-
-.social a:hover {
-    color: pink;
+    a i {
+        color: #494848;
+    }
+    a i:hover {
+        color: white;
+    }
 }
 
 @media screen and (max-width: 1000px) {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CabotCruises: <?php echo($title); ?></title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -19,12 +19,27 @@
 <body>
     <div class='body-wrapper'>
         <div class="header">
-            <div class='smallHeader'>
-                <i class="fas fa-bars"></i>
+            <nav class='smallHeader'>
+                <i class="fas fa-bars" id='theButton'></i>
                 <form class="search" >
                     <input type="text" placeholder="Search.." name="search">
                 </form>
-            </div>
+                <div class='menu'>
+                    <a class="active" href="#">Home</a>
+                    <a href="#">Cruises</a>
+                    <div class="subnav">
+                        <button class="subnavbtn">Agents <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                          <a href="#">Bring</a>
+                          <a href="#">Deliver</a>
+                          <a href="#">Package</a>
+                          <a href="#">Express</a>
+                        </div>
+                    </div> 
+
+                    <a href="#">Book</a>
+                </div>
+            </nav>
             <div class="top-header">
                 <figure>
                     <img 
@@ -39,8 +54,8 @@
             <div class="nav">
                 <div class='nav-grouping'>
                     <div class='menu'>
-                        <a class="active" href="index.php">Home</a>
-                        <a href="/cruises.php">Cruises</a>
+                        <a class="active" href="#">Home</a>
+                        <a href="#">Cruises</a>
                         <div class="subnav">
                             <button class="subnavbtn">Agents <i class="fa fa-caret-down"></i></button>
                             <div class="subnav-content">
@@ -51,7 +66,7 @@
                             </div>
                         </div> 
 
-                        <a href="/book.php">Book</a>
+                        <a href="#">Book</a>
                     </div>
                     
                     <form class="search" >
