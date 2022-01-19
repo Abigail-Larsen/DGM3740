@@ -98,7 +98,7 @@ a, a:visited, a:hover, a:active {
   color: black; }
 
 .nav a.active {
-  background-color: #2196F3;
+  background-color: #12558b;
   color: white; }
 
 .subnav {
@@ -150,7 +150,7 @@ form.search button {
   float: right;
   width: 5%;
   padding: 5px;
-  background: #2196F3;
+  background: #12558b;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
