@@ -16,6 +16,7 @@
 
 .slider-wrapper{
     width: 100%;
+    padding-top:20px;
     display: flex;
     justify-content: center;
 }
@@ -23,7 +24,6 @@
 .slider {
     width: 100%;
     height: auto;
-    // background-size: cover;
     background-color: #616161;
     margin: 5px;
 }

@@ -278,6 +278,7 @@ form.search button:hover {
 
 .slider-wrapper {
   width: 100%;
+  padding-top: 20px;
   display: flex;
   justify-content: center; }
 
