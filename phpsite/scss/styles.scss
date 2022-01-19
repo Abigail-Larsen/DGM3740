@@ -1,7 +1,17 @@
 @import "reset";
+@import "mediumNav";
 @import "header";
 @import "body";
 @import "book";
 @import "agent";
 @import "cruises";
 @import "footer";
+
+//35em is also 560px (if basefont is 16px)
+@media only screen and (max-width: 550px) {
+	@import "smallNav";
+}
+
+@media only screen and (max-width: 1000px) {
+	@import "smallNav";
+}

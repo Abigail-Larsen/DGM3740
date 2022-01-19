@@ -49,9 +49,36 @@
 
 
 @media screen and (max-width: 1000px) {
-    
+    .cruise-wrapper .cruise .info{
+        button {
+            width: 50%;
+            left: 50%;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
-    
+    .cruise-wrapper .cruise {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        img {
+            height: 350px;
+        }
+
+        .info {
+            text-overflow: wrap;
+            padding: 10px;
+            height: 100%;
+            width: 90%;
+
+            button {
+                width: 50%;
+                left: 0;
+            }
+        }
+    }
+
 }

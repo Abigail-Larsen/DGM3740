@@ -19,25 +19,18 @@
 <body>
     <div class='body-wrapper'>
         <div class="header">
-            <nav class='smallHeader'>
-                <i class="fas fa-bars fa-lg" id='theButton'></i>
+
+            <div class='smallHeader'>
+                <?php 
+                    include '_nav.php';     
+                ?>
+
                 <form class="search" >
                     <input type="text" placeholder="Search.." name="search">
                 </form>
-                <div class='menu'>
-                    <a href="/index.php">Home</a>
-                    <a href="/cruises.php">Cruises</a>
-                    <div class="subnav">
-                        <button class="subnavbtn">Agents <i class="fa fa-caret-down"></i></button>
-                        <div class="subnav-content">
-                          <a href="/contact">Contact an Agent</a>
-                          <a href="/who">Who</a>
-                        </div>
-                    </div> 
+            </div>
 
-                    <a href="/book.php">Book</a>
-                </div>
-            </nav>
+
             <div class="top-header">
                 <figure>
                     <img
@@ -51,25 +44,15 @@
             </div>
     
             <div class="nav">
-                <div class='nav-grouping'>
-                    <div class='menu'>
-                        <a href="/index.php">Home</a>
-                        <a href="/cruises.php">Cruises</a>
-                        <div class="subnav">
-                            <button class="subnavbtn" href="/agent.php">Agents <i class="fa fa-caret-down"></i></button>
-                            <div class="subnav-content">
-                                <a href="#">Contact an Agent</a>
-                                <a href="#">Who</a>
-                            </div>
-                        </div> 
-
-                        <a href="/book.php">Book</a>
-                    </div>
-                    
+                    <?php 
+                        include '_nav.php';     
+                    ?>
                     <form class="search" >
-                        <button type="submit"><i class="fa fa-search"></i></button>
                         <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                </div>
             </div>
+
+
+
         </div>
