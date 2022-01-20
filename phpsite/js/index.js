@@ -1,8 +1,10 @@
 "use strict";
 
 function toggleMenu() {
-    document.getElementsByTagName("NAV")[0].classList.toggle("open");
+  document.getElementsByTagName("NAV")[0].classList.toggle("open");
 }
+const x = document.getElementById('theButton');
+x.onclick = toggleMenu; 
 
 const setActive = (el, active) => {
     const formField = el?.parentNode?.parentNode
@@ -32,6 +34,4 @@ function setActiveNav() {
     console.log('set active nav')
 }
 
-const x = document.getElementById('theButton');
-x.onclick = toggleMenu; 
 document.querySelectorAll("form .form-field__label").onClick = setActive()

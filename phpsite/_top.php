@@ -19,17 +19,14 @@
 <body>
     <div class='body-wrapper'>
         <div class="header">
-
             <div class='smallHeader'>
                 <?php 
                     include '_nav.php';     
                 ?>
-
                 <form class="search" >
                     <input type="text" placeholder="Search.." name="search">
                 </form>
             </div>
-
 
             <div class="top-header">
                 <figure>
