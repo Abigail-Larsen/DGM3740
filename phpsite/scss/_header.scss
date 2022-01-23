@@ -111,6 +111,9 @@ form.search button:hover {
   }
 }
 @media screen and (max-width: 500px) {
+  nav ul {
+    display: none;
+  }
   .smallHeader form.search input[type="text"] {
     border: 0.5px solid grey;
     float: right;

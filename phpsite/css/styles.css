@@ -179,6 +179,9 @@ form.search button:hover {
   .nav {
     display: none; } }
 @media screen and (max-width: 500px) {
+  nav ul {
+    display: none; }
+
   .smallHeader form.search input[type="text"] {
     border: 0.5px solid grey;
     float: right;
@@ -466,7 +469,8 @@ form .submit-form {
       width: 50%;
       height: auto;
       background-size: cover;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      padding: 15px; }
   .agent-wrapper .bottom-wrapper {
     width: 100%; }
   .agent-wrapper .item {
@@ -498,7 +502,8 @@ form .submit-form {
       .agent-wrapper .top-wrapper img {
         width: 100%;
         height: 100%;
-        float: none; }
+        float: none;
+        padding: 0; }
     .agent-wrapper .text {
       display: flex;
       flex-direction: column;
@@ -679,8 +684,7 @@ form .submit-form {
     right: 0;
     width: 40px;
     height: 40px;
-    transition: background .2s linear;
-    border: red solid 1px; }
+    transition: background .2s linear; }
     nav button {
       display: inline;
       position: absolute;
@@ -734,8 +738,7 @@ form .submit-form {
     right: 0;
     width: 40px;
     height: 40px;
-    transition: background .2s linear;
-    border: red solid 1px; }
+    transition: background .2s linear; }
     nav button {
       display: inline;
       position: absolute;
